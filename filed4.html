@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+          boolean solve(Node n) {
+           put node n on the stack;
+            while the stack is not empty {
+             if the node at the top of the stack is a leaf {
+               if it is a goal node, return true
+                else pop it off the stack
+            }
+            else {
+              if the node at the top of the stack has untried children
+                push the next untried child onto the stack
+              else pop the node off the stack
+
+            
+            }   
+            return false
+          }
+    </pre>
+</body>
+</html>

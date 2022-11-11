@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+
+        static boolean solvable (BinaryTree node) {
+
+            if (node.isGoalNode) return true;
+            
+            if (node.leftChild != null && solvable(node.leftChild)) return true;
+            
+            if (node.rightChild != null && solvable (node.rightChild)) return true;
+            
+            return false;
+            
+            }
+    </pre>
+</body>
+</html>
